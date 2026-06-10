@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Answer</title>
+    <link rel="stylesheet" href="css/main_style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header Section -->
+        <div class="header">
+            <h1 class="fade-in">Best Place, Best Suggestion</h1>
+            <p class="fade-in">
+                Choose your interests and stop worrying about finding a restaurant or café.
+            </p>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="image-row row1 fade-in">
+            <div class="image-container">
+                <img src="images/soal1.png" alt="First Image">
+            </div>
+
+            <form onsubmit="return handleSubmit(event)">
+                <p class="fade-in" style="margin-left:130px; font-size: 22px;">
+                    Which place do you prefer for eating?
+                </p>
+
+                <div class="options">
+                    <label class="fade-in" style="margin-left:110px; font-size: 17px;">
+                        <input type="radio" name="question1" value="option1"> Restaurant
+                    </label>
+
+                    <label class="fade-in" style="font-size: 17px;">
+                        <input type="radio" name="question1" value="option2"> Café
+                    </label>
+
+                    <label class="fade-in" style="font-size: 17px;">
+                        <input type="radio" name="question1" value="option3"> Fast Food
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="image-row row2 fade-in">
+            <div class="image-container">
+                <img src="images/soal2.png" alt="Second Image">
+            </div>
+
+            <form onsubmit="return handleSubmit(event)">
+                <p class="fade-in" style="margin-left:150px; font-size: 22px;">
+                    Do you prefer a crowded or quiet place?
+                </p>
+
+                <div class="options">
+                    <label class="fade-in" style="margin-left:100px; font-size: 17px;">
+                        <input type="radio" name="question2" value="option1"> Quiet
+                    </label>
+
+                    <label class="fade-in" style="font-size: 17px;">
+                        <input type="radio" name="question2" value="option2"> Crowded
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="image-row row3 fade-in">
+            <div class="image-container">
+                <img src="images/soal3.png" alt="Third Image">
+            </div>
+
+            <form onsubmit="return handleSubmit(event)">
+                <p class="fade-in" style="margin-left:200px; font-size: 22px;">
+                    Which price range do you prefer?
+                </p>
+
+                <div class="options">
+                    <label class="fade-in" style="margin-left:160px; font-size: 17px;">
+                        <input type="radio" name="question3" value="option1"> Expensive
+                    </label>
+
+                    <label class="fade-in" style="font-size: 17px;">
+                        <input type="radio" name="question3" value="option2"> Moderate
+                    </label>
+
+                    <label class="fade-in" style="font-size: 17px;">
+                        <input type="radio" name="question3" value="option3"> Cheap
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="image-row row4 fade-in">
+            <div class="image-container">
+                <img src="images/soal4.png" alt="Fourth Image">
+            </div>
+
+            <form onsubmit="return handleSubmit(event)">
+                <p class="fade-in" style="margin-left:170px; font-size: 22px;">
+                    Which dining atmosphere do you prefer?
+                </p>
+
+                <div class="options">
+                    <label class="fade-in" style="margin-left:130px; font-size: 17px;">
+                        <input type="radio" name="question4" value="option1"> Outdoor
+                    </label>
+
+                    <label class="fade-in" style="font-size: 17px;">
+                        <input type="radio" name="question4" value="option2"> Indoor
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <!-- Submit Button -->
+        <div style="display:flex; justify-content:center">
+            <a href="#" onclick="handleRedirect()" class="button fade-in">
+                Submit
+            </a>
+        </div>
+
+    </div>
+
+    <script src="js/main_script.js"></script>
+
+</body>
+</html>

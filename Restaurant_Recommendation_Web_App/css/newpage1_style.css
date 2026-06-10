@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box; /* Set box-sizing for all elements */
+}
+body{
+    background:red;
+}
+body { 
+    direction: ltr; 
+    text-align: left; 
+    font-family: 'Arial', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #e9ecef; /* Soft background color */
+    height: 100vh; /* Full page height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.container {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    padding: 0; /* Remove padding */
+    background-color: #a3bdae;
+    border-radius: 15px; /* Rounded corners for container */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Deep shadow */
+    overflow-y: auto; /* Vertical scrolling if needed */
+}
+
+.header {
+    position: relative; /* Relative position for better control */
+    background-image: url('../images/imageheader.png');
+    background-size: cover; /* Cover full area */
+    background-position: center; /* Center image */
+    padding: 100px 60px; /* Increased padding */
+    height: 300px; /* Set height */
+    width: 100%; /* Full width */
+    border-radius: 0; /* Remove rounded corners */
+    color: rgba(235, 231, 231, 0.918); /* Text color */
+    text-align: left; /* Left-align text */
+    margin: 0; /* Remove margins */
+    margin-bottom: 40px; /* Space below */
+    transition: transform 0.5s ease; /* Smooth zoom transition */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 { 
+    font-size: 30px; 
+    margin-bottom: 10px; 
+}
+
+p { 
+    font-size: 18px; 
+}
+
+.header::before {
+    content: ""; /* Create empty content */
+    position: absolute; /* Absolute position over background */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Start lower */
+    transition: opacity 1s ease, transform 1s ease; /* Fade and move transition */
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0); /* Return to normal position */
+}
+
+.image-row {
+    display: flex;
+    align-items: center; /* Vertical center */
+    justify-content: flex-start; /* Align content left */
+    margin-bottom: 30px; /* Space between rows */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.65); /* Deep shadow */
+    transition: transform 0.3s ease; /* Zoom animation */
+    width: calc(80% - 150px); /* Narrower width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-row:hover {
+    transform: scale(1.03); /* Zoom on hover */
+}
+
+.description {
+    margin-top: 100px;
+    font-size: 14px; /* Smaller font size */
+    color: #333;
+    font-style: italic; /* Italic description */
+    text-align: justify;
+    width: 630px;
+    line-height: 1.4;
+}
+
+.image-container {
+    flex-shrink: 0; /* Prevent image shrinking */
+}
+
+img {
+    width: 300px; /* Larger image width */
+    border-radius: 10px; /* Rounded image corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.98); /* Image shadow */
+}
+
+.row1 { background-color:#e7f0ef; }
+.row2 { background-color:#d1dddd; }
+.row3 { background-color:#e7f0ef; }
+.row4 { background-color:#d1dddd; }
+
+.footer {
+    margin-top: 30px;
+    font-size:14px;
+    color:#0c0a0a;
+}
+
+h2 {
+    font-size: 30px; /* Larger title font size */
+    margin-bottom: 130px; /* Space below title */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 24px; /* Increased button padding */
+    background-color: #578680; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 20px; /* Rounded button */
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease; /* Smooth transitions */
+    font-size: 18px; /* Larger font */
+    font-weight: bold; /* Bold text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+    margin-bottom: 40px;
+}
+
+.button:hover {
+    background-color: #365551; /* Darker color on hover */
+    transform: translateY(-2px); /* Move upward */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+}
+
+.button:active {
+    transform: translateY(1px); /* Move downward on click */
+}
+
+.survey-btn {
+    background-color: #6c757d; /* خاکستری */
+}
+
+.survey-btn:hover {
+    background-color: #5a6268; /* خاکستری تیره‌تر */
+}

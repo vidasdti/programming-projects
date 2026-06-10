@@ -1,0 +1,68 @@
+body {
+    direction: ltr;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* کادر اصلی */
+.pollbox {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+/* عنوان */
+h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* سوال‌ها */
+.case {
+    margin: 10px 0;
+}
+
+/* فاصله بین radio و متن */
+.case input {
+    margin-right: 8px;
+}
+
+/* ===== دکمه وسط ===== */
+.submit-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* دکمه */
+button {
+    background-color: #578680;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+/* hover */
+button:hover {
+    background-color: #365551;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* click */
+button:active {
+    transform: translateY(1px);
+}
