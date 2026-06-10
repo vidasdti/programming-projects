@@ -71,8 +71,7 @@ This project was built as a front-end practice project to improve:
 ---
 
 ## Screenshots
-
-(Add screenshots of main pages, recommendation pages, and survey page here)
+ SOON
 
 ---
 
