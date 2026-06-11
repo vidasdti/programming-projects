@@ -71,7 +71,24 @@ This project was built as a front-end practice project to improve:
 ---
 
 ## Screenshots
- SOON
+
+### Main Page
+![Main Page](Screenshots/main1.png)
+![Main Page](Screenshots/main2.png)
+![Main Page](Screenshots/main3.png)
+
+### Recommendations
+![Recommendations](Screenshots/newpage1.png)
+![Recommendations](Screenshots/newpage2.png)
+
+### Keykhosro Restaurant
+![Keykhosro](Screenshots/keykhosro.png)
+
+### Survey Page
+![Survey](Screenshots/survey.png)
+
+### Thank You Page
+![Thanks](Screenshots/thnku.png)
 
 ---
 
