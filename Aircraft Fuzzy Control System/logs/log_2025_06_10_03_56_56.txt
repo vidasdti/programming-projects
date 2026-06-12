@@ -1,0 +1,53 @@
+Flight Phase: APPROACH
+==========================================
+
+--- Input Data Entry ---
+
++-----------------------------+----------+--------------------------+----------+
+|         Input Name          |  Value   |           Label          | Degree   |
++-----------------------------+----------+--------------------------+----------+
+| turbulence                  |     2.89 | severe                   |     0.86 |
+| air_speed                   |    93.63 | stall                    |     0.64 |
+| altitude                    |    23.80 | low                      |     1.00 |
+| pitch_angle                 |    16.97 | noseup                   |     0.61 |
+| vertical_speed              |   841.39 | climb                    |     0.34 |
+| engine_health               |     0.47 | optimal                  |     0.29 |
+| fuel_status                 |     8.94 | empty                    |     0.21 |
+| proximity_to_obstacles      |    32.98 | immediate_danger         |     1.00 |
+| tcas_conflict_level         |     2.81 | emergency_avoidance      |     0.82 |
++-----------------------------+----------+--------------------------+----------+
+
++-----------------------------+----------+--------------------------+----------+
+|        Output Name          |  Value   |           Label          | Degree   |
++-----------------------------+----------+--------------------------+----------+
+| thrust_command              |   100.00 | max                      |     1.00 |
+| elevator_deflection         |   -20.00 | down                     |     1.00 |
+| autopilot_mode_suggestion   |     0.00 | manual                   |     1.00 |
+| stall_warning               |     1.00 | warning                  |     1.00 |
+| fuel_reserve_command        |     0.00 | emergency_diversion      |     1.00 |
+| stress_reduction_aid        |     1.00 | override_manual          |     1.00 |
++-----------------------------+----------+--------------------------+----------+
+
+ Explanation from expln_rules_cleaned_final.txt:
+ -------------------------------------------------
+  - Low airspeed and pitch attitude indicate high stall risk; issuing stall advisory is critical.
+  - Vertical dynamics suggest aggressive altitude change, requiring corresponding thrust and control.
+  - Engine health degraded; thrust adjusted to ensure performance under failure conditions.
+  - High TCAS conflict level; autopilot mode and manual override may be prioritized for safety.
+  
+ -------------------------------------------------
+
+ Main contributing factors (Degree >= 0.85):
+ - turbulence               = 2.89 (severe)
+ - altitude                 = 23.80 (low)
+ - proximity_to_obstacles   = 32.98 (immediate_danger)
+
+===========================================================
+|                   FAIL-SAFE MODE ACTIVATED              |
+|---------------------------------------------------------|
+| A critical condition was detected.                      |
+| Emergency control outputs were issued.                  |
+| Fuzzy logic system was overridden for safety response.  |
+===========================================================
+
+ Analysis complete.

@@ -1,0 +1,42 @@
+Flight Phase: CLIMB
+==========================================
+
+--- Input Data Entry ---
+
++-----------------------------+----------+--------------------------+----------+
+|         Input Name          |  Value   |           Label          | Degree   |
++-----------------------------+----------+--------------------------+----------+
+| turbulence                  |     1.84 | moderate                 |     0.73 |
+| air_speed                   |   222.53 | high                     |     0.25 |
+| altitude                    |  5964.57 | medium                   |     0.10 |
+| pitch_angle                 |    -8.00 | nosedown                 |     0.30 |
+| vertical_speed              |    21.42 | level                    |     0.98 |
+| engine_health               |     1.80 | critical                 |     0.80 |
+| fuel_status                 |    89.61 | full                     |     0.97 |
+| proximity_to_obstacles      |   476.96 | caution                  |     0.71 |
+| tcas_conflict_level         |     0.54 | advisory                 |     0.31 |
++-----------------------------+----------+--------------------------+----------+
+
++-----------------------------+----------+--------------------------+----------+
+|        Output Name          |  Value   |           Label          | Degree   |
++-----------------------------+----------+--------------------------+----------+
+| thrust_command              |    77.50 | high                     |     0.83 |
+| elevator_deflection         |   -15.00 | down                     |     1.00 |
+| autopilot_mode_suggestion   |     0.92 | alt_hold                 |     0.96 |
+| stall_warning               |     1.00 | advisory                 |     1.00 |
+| fuel_reserve_command        |     1.00 | economy_mode             |     1.00 |
+| stress_reduction_aid        |     0.92 | increase_autopilot       |     0.97 |
++-----------------------------+----------+--------------------------+----------+
+
+ Explanation from expln_rules_cleaned_final.txt:
+ -------------------------------------------------
+  - Low airspeed and pitch attitude indicate high stall risk; issuing stall advisory is critical.
+  - Vertical dynamics suggest aggressive altitude change, requiring corresponding thrust and control.
+  
+ -------------------------------------------------
+
+ Main contributing factors (Degree >= 0.85):
+ - vertical_speed           = 21.42 (level)
+ - fuel_status              = 89.61 (full)
+
+ Analysis complete.

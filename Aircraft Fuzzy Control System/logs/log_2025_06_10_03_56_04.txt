@@ -1,0 +1,51 @@
+Flight Phase: LANDING
+==========================================
+
+--- Input Data Entry ---
+
++-----------------------------+----------+--------------------------+----------+
+|         Input Name          |  Value   |           Label          | Degree   |
++-----------------------------+----------+--------------------------+----------+
+| turbulence                  |     2.80 | severe                   |     0.61 |
+| air_speed                   |   114.24 | slow                     |     0.79 |
+| altitude                    |   488.12 | low                      |     1.00 |
+| pitch_angle                 |    15.21 | noseup                   |     0.96 |
+| vertical_speed              |  1912.87 | climb                    |     0.59 |
+| engine_health               |     0.69 | degraded                 |     0.59 |
+| fuel_status                 |     5.22 | empty                    |     0.96 |
+| proximity_to_obstacles      |    76.63 | immediate_danger         |     0.47 |
+| tcas_conflict_level         |     2.23 | resolution_advisory      |     0.75 |
++-----------------------------+----------+--------------------------+----------+
+
++-----------------------------+----------+--------------------------+----------+
+|        Output Name          |  Value   |           Label          | Degree   |
++-----------------------------+----------+--------------------------+----------+
+| thrust_command              |   100.00 | max                      |     1.00 |
+| elevator_deflection         |   -20.00 | down                     |     1.00 |
+| autopilot_mode_suggestion   |     0.00 | manual                   |     1.00 |
+| stall_warning               |     1.00 | warning                  |     1.00 |
+| fuel_reserve_command        |     0.00 | emergency_diversion      |     1.00 |
+| stress_reduction_aid        |     1.00 | override_manual          |     1.00 |
++-----------------------------+----------+--------------------------+----------+
+
+ Explanation from expln_rules_cleaned_final.txt:
+ -------------------------------------------------
+  - Low airspeed and pitch attitude indicate high stall risk; issuing stall advisory is critical.
+  - Engine health degraded; thrust adjusted to ensure performance under failure conditions.
+  
+ -------------------------------------------------
+
+ Main contributing factors (Degree >= 0.85):
+ - altitude                 = 488.12 (low)
+ - pitch_angle              = 15.21 (noseup)
+ - fuel_status              = 5.22 (empty)
+
+===========================================================
+|                   FAIL-SAFE MODE ACTIVATED              |
+|---------------------------------------------------------|
+| A critical condition was detected.                      |
+| Emergency control outputs were issued.                  |
+| Fuzzy logic system was overridden for safety response.  |
+===========================================================
+
+ Analysis complete.

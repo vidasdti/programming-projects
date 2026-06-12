@@ -1,0 +1,44 @@
+Flight Phase: CRUISE
+==========================================
+
+--- Input Data Entry ---
+
++-----------------------------+----------+--------------------------+----------+
+|         Input Name          |  Value   |           Label          | Degree   |
++-----------------------------+----------+--------------------------+----------+
+| turbulence                  |     1.00 | light                    |     1.00 |
+| air_speed                   |   180.00 | high                     |     0.33 |
+| altitude                    | 30000.00 | high                     |     1.00 |
+| pitch_angle                 |     2.00 | level                    |     0.80 |
+| vertical_speed              |   200.00 | level                    |     0.80 |
+| engine_health               |     2.00 | critical                 |     1.00 |
+| fuel_status                 |    80.00 | full                     |     0.33 |
+| proximity_to_obstacles      |   800.00 | far                      |     0.50 |
+| tcas_conflict_level         |     0.00 | none                     |     1.00 |
++-----------------------------+----------+--------------------------+----------+
+
++-----------------------------+----------+--------------------------+----------+
+|        Output Name          |  Value   |           Label          | Degree   |
++-----------------------------+----------+--------------------------+----------+
+| thrust_command              |    50.00 | medium                   |     0.67 |
+| elevator_deflection         |     0.00 | neutral                  |     1.00 |
+| autopilot_mode_suggestion   |     1.50 | alt_hold                 |     0.25 |
+| stall_warning               |     1.00 | advisory                 |     1.00 |
+| fuel_reserve_command        |     1.00 | economy_mode             |     1.00 |
+| stress_reduction_aid        |     1.00 | increase_autopilot       |     1.00 |
++-----------------------------+----------+--------------------------+----------+
+
+ Explanation from expln_rules_cleaned_final.txt:
+ -------------------------------------------------
+  - Low airspeed and pitch attitude indicate high stall risk; issuing stall advisory is critical.
+  - Engine health degraded; thrust adjusted to ensure performance under failure conditions.
+  
+ -------------------------------------------------
+
+ Main contributing factors (Degree >= 0.85):
+ - turbulence               = 1.00 (light)
+ - altitude                 = 30000.00 (high)
+ - engine_health            = 2.00 (critical)
+ - tcas_conflict_level      = 0.00 (none)
+
+ Analysis complete.
