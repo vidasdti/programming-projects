@@ -164,7 +164,7 @@ Monitors critical flight conditions and determines whether emergency override ac
 
 For a complete description of the system architecture, fuzzy variables, membership functions, rule base, fail-safe logic, implementation details, and example scenarios, please refer to:
 
-📄 **Aircraft Fuzzy Control System.pdf**
+**Aircraft Fuzzy Control System.pdf**
 
 ---
 
