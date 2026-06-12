@@ -1,4 +1,4 @@
-# ✈️ Aircraft Fuzzy Control System
+# Aircraft Fuzzy Control System
 
 A MATLAB-based fuzzy logic control system designed to simulate aircraft decision-making across different phases of flight.
 
@@ -150,32 +150,6 @@ check_fail_safe.m
 ```
 
 Monitors critical flight conditions and determines whether emergency override actions should be activated.
-
----
-
-## Project Structure
-
-```text
-Aircraft-Fuzzy-Control-System/
-│
-├── plane_takeoff.fis
-├── plane_climb.fis
-├── plane_cruise.fis
-├── plane_approach.fis
-├── plane_landing.fis
-│
-├── interactive_fuzzy_explainer.m
-├── explain_from_cleaned_file.m
-├── compare_fis_outputs.m
-├── check_fail_safe.m
-│
-├── expln_rules_cleaned_final.txt
-│
-├── logs/
-├── mf_plots/
-│
-└── Aircraft Fuzzy Control System.pdf
-```
 
 ---
 
