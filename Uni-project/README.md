@@ -40,9 +40,6 @@ A Windows Forms application developed using C# and SQL Server for managing unive
 ### Course Table
 ![Course Table](screenshots/course-table.png)
 
-### Professor Table
-![Professor Table](screenshots/professor-table.png)
-
 ## Author
 
 Vida Sadati
