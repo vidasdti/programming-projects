@@ -45,7 +45,7 @@ A Windows Forms application developed using C# and SQL Server for managing unive
 ### Course Table
 
 <p align="center">
-<img src="screenshots/course-table.png" width="700">
+<img src="screenshots/course-table.png" width="800">
 </p>
 
 ## Author
