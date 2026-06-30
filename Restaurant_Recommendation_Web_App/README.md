@@ -75,7 +75,7 @@ This project was built as a front-end practice project to improve:
 ### Main Page
 
 <p align="center">
-<img src="Screenshots/main1.png" width="800">
+<img src="Screenshots/main1.png" width="900">
 </p>
 <p align="center">
 <img src="Screenshots/main2.png" width="800">
