@@ -31,7 +31,7 @@ A Windows Forms application developed using C# and SQL Server for managing unive
 ## Database Schema
 
 <p align="center">
-<img src="screenshots/database-diagram.png" width="700">
+<img src="screenshots/database-diagram.png" width="800">
 </p>
 
 ## Screenshots
@@ -39,7 +39,7 @@ A Windows Forms application developed using C# and SQL Server for managing unive
 ### Student Table
 
 <p align="center">
-<img src="screenshots/student-table.png" width="700">
+<img src="screenshots/student-table.png" width="800">
 </p>
 
 ### Course Table
