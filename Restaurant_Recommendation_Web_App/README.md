@@ -73,22 +73,43 @@ This project was built as a front-end practice project to improve:
 ## Screenshots
 
 ### Main Page
-![Main Page](Screenshots/main1.png)
-![Main Page](Screenshots/main2.png)
-![Main Page](Screenshots/main3.png)
+
+<p align="center">
+<img src="Screenshots/main1.png" width="700">
+</p>
+<p align="center">
+<img src="Screenshots/main2.png" width="700">
+</p>
+<p align="center">
+<img src="Screenshots/main3.png" width="700">
+</p>
 
 ### Recommendations
-![Recommendations](Screenshots/newpage1.png)
-![Recommendations](Screenshots/newpage2.png)
+
+<p align="center">
+<img src="Screenshots/newpage1.png" width="700">
+</p>
+<p align="center">
+<img src="Screenshots/newpage2.png" width="700">
+</p>
 
 ### Keykhosro Restaurant
-![Keykhosro](Screenshots/keykhosro.png)
+
+<p align="center">
+<img src="Screenshots/keykhosro.png" width="700">
+</p>
 
 ### Survey Page
-![Survey](Screenshots/survey.png)
+<p align="center">
+<img src="Screenshots/survey.png" width="700">
+</p>
 
 ### Thank You Page
-![Thanks](Screenshots/thnku.png)
+
+<p align="center">
+<img src="Screenshots/thnku.png" width="700">
+</p>
+
 
 ---
 
