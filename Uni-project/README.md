@@ -30,15 +30,23 @@ A Windows Forms application developed using C# and SQL Server for managing unive
 
 ## Database Schema
 
-![Database Diagram](screenshots/database-diagram.png)
+<p align="center">
+<img src="screenshots/database-diagram.png" width="700">
+</p>
 
 ## Screenshots
 
 ### Student Table
-![Student Table](screenshots/student-table.png)
+
+<p align="center">
+<img src="screenshots/student-table.png" width="700">
+</p>
 
 ### Course Table
-![Course Table](screenshots/course-table.png)
+
+<p align="center">
+<img src="screenshots/course-table.png" width="700">
+</p>
 
 ## Author
 
